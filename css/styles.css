@@ -805,12 +805,28 @@ color: var(--white-transparent);
 }
 
 .checkbox-lbl{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 14px;
   line-height: 1.714;
   color: var(--gray);
+}
+
+.checkbox-txt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-txt{
+color: var(--blue);
+}
+
+.left{
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+}
+
+.right{
+  margin-left: 0.3em;
 }
 
 .checkbox-txt::before{
