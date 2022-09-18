@@ -429,20 +429,30 @@
 <p class="form-title">Zostaw swoje dane w formularzu poniżej</p>
 <form class="main-form">
 <div class="inputs">
-<label></label>
-<input type="text">
-<label></label>
-<input type="text">
-<label></label>
-<input type="text">
-<label></label>
-<input type="text">
-</div>
-<div class="checkbox">
-<input>
-<label></label>
+<label class="inputs-lbl text-style">Imię
+<svg class="inputs-icon">
+  <use href="./images/icons.svg#icon-person"></use></svg>
+<input  class="field" type="text" name="name"></label>
+
+<label class="inputs-lbl text-style">Telefon
+  <svg class="inputs-icon">
+    <use href="./images/icons.svg#icon-phone"></use></svg>
+<input class="field" type="tel" name="phone-number"></label>
+
+<label class="inputs-lbl text-style">Email<svg class="inputs-icon">
+  <use href="./images/icons.svg#icon-email"></use></svg>
+<input  class="field" type="email" name="email"></label>
+
+<label class="inputs-lbl text-style">Komentarz</label>
+<textarea class="field comment text-style" name="comment" placeholder="Wprowadź tekst"></textarea>
 </div>
 
+
+<div class="checkbox">
+  <label class="checkbox-lbl"><input class="checkbox-inp hidden" type="checkbox" name="terms-and-policy">
+<span class="checkbox-txt">Oświadczam, iż akceptuję Regulamin i Politykę Prywatności.</span></label>
+</div>
+<div class="form-btn"><button class="button" type="submit">Wyślij</button></div>
 </form>
 
 
