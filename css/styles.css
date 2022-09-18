@@ -215,7 +215,8 @@ body {
 .button {
   width: 200px;
   height: 50px;
-  padding: 10px 41px 10px 42px;
+
+  /* padding: 10px 41px 10px 42px; */
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -398,6 +399,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  gap: 30px;
 }
 .brand-item {
   display: flex;
@@ -618,6 +620,11 @@ height: 86px;
 padding-top: 12px;
 }
 
+.form-row {
+  display: flex;
+  gap: 12px;
+}
+
 .footer-form-input {
   width: 358px;
   height: 50px;
@@ -634,6 +641,25 @@ outline: 0;
 font-size: 16px;
 line-height: 1.25;
 color: var(--white-transparent);
+}
+
+.form-row .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.button-img{
+  width: 24px;
+  height: 24px;
+}
+
+
+.button-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--white);
 }
 
 
@@ -663,9 +689,14 @@ color: var(--white-transparent);
 }
 
 .modal-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   box-sizing: border-box;
   width: 528px;
   height: 581px;
+  padding: 40px;
   border-radius: 4px;
   background-color: var(--white);
   cursor: initial;
@@ -697,4 +728,22 @@ color: var(--white-transparent);
   transform: translate(-50%, -50%);
   width: 18px;
   height: 18px;
+}
+
+.form-title {
+  margin-bottom: 12px;
+  font-family: "Roboto";
+  color: var(--black);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 448px;
+  height: 342px;
+
 }
