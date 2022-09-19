@@ -725,7 +725,14 @@ body {
   right: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--white);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.close-button:hover,
+.close-button:focus{
+  border-color: var(--blue);
+}
+
 
 .close-icon {
   position: absolute;
@@ -734,6 +741,7 @@ body {
   transform: translate(-50%, -50%);
   width: 18px;
   height: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-title {
@@ -817,6 +825,12 @@ body {
 
 .link-txt {
   color: var(--blue);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-txt:hover,
+.link-txt:focus{
+ color: #006ec7;
 }
 
 .left {
@@ -849,7 +863,9 @@ body {
 }
 
 .inputs-lbl:hover .inputs-icon,
-.inputs-lbl:focus .inputs-icon {
+.inputs-lbl:focus .inputs-icon,
+.close-button:hover .close-icon,
+.close-button:focus .close-icon{
   fill: var(--blue);
 }
 
